@@ -217,3 +217,5 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 @media(hover:hover){#ak .diom-school-pair .school-switch button:hover{border-color:#fe8b5b;background:#fff5ee;color:#87360f}}
 #ak .diom-school-pair .school-switch button:focus-visible{outline:2px solid #fe5f27;outline-offset:4px}
 @media(max-width:760px){#ak .diom-school-pair .school-switch{padding:20px;min-height:0;gap:9px}#ak .diom-school-pair .school-switch button{flex:1 1 130px;padding:12px 14px;font-size:13px}}
+/* Имя на главной: верхняя линия Е продолжает перекладину Т одной толщиной (Unbounded 600) */
+#ak .name-band .nb-e{font-style:normal;position:relative}#ak .name-band .nb-e::after{content:'';position:absolute;left:.24em;width:.51em;top:.25em;height:.162em;background:currentColor}
