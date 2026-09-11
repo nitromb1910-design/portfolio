@@ -194,3 +194,26 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 #ak #diom-objects .badge-controls button[aria-pressed=true]{background:#fe5f27;color:white;border-color:#fe5f27}
 @media(max-width:700px){#ak #diom-objects{padding:16px;margin-top:24px}#ak #diom-objects .badge-stage{height:510px}#ak #diom-objects .badge-controls{gap:12px}#ak #diom-objects .badge-controls>div{gap:6px;flex-wrap:wrap}}
 #ak .case-diom .school-pair{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}@media(max-width:900px){#ak .case-diom .school-pair{grid-template-columns:1fr}}
+/* ДИОМ Refined-5: парные изометрии школ, типографика */
+#ak .diom-school-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:stretch;margin:60px 0}
+#ak .diom-school-pair>.diom-book-section{min-width:0;margin:0;padding:0;display:flex;flex-direction:column}
+#ak .diom-school-pair .diom-part-heading{display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-height:210px;padding:0;margin:0 0 24px}
+#ak .diom-school-pair .diom-part-heading h2{font-size:clamp(26px,2.7vw,42px);line-height:1.1;margin:0}
+#ak .diom-school-pair .diom-part-heading p{font-size:17px;line-height:1.5;margin:0}
+#ak .diom-school-pair .diom-school-states{margin-top:auto}
+#ak .diom-school-pair .diom-school-stage{aspect-ratio:1.3;height:auto!important;width:100%;background:white}
+#ak .diom-school-pair .diom-school-stage img{width:100%;height:100%;object-fit:contain!important;object-position:center;transform:none!important}
+#ak .diom-school-pair .school-switch{display:flex;flex-wrap:wrap;gap:8px;min-height:98px;align-content:start;padding:16px 0}
+#ak .diom-school-pair .school-switch>span{width:100%;margin-bottom:5px}
+#ak .diom-type-specimen{grid-column:1/-1!important;min-height:260px!important}
+@media(max-width:760px){#ak .diom-school-pair{grid-template-columns:1fr;gap:36px;margin:36px 0}#ak .diom-school-pair .diom-part-heading{min-height:0}#ak .diom-school-pair .diom-part-heading p{font-size:15px}}
+/* Airy brand-aligned controls for the paired school illustrations. */
+#ak .diom-school-pair .school-switch{padding:24px 28px 28px;gap:10px;min-height:144px;box-sizing:border-box;align-items:center;align-content:start;background:#fff}
+#ak .diom-school-pair .school-switch>span{display:block;width:100%;margin:0 0 8px;color:#555650;font-size:14px;line-height:1.5}
+#ak .diom-school-pair .school-switch button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 17px;margin:0;border:1px solid #deded9;border-radius:8px;background:#f8f8f5;color:#53554f;font-family:inherit;font-size:14px;font-weight:500;line-height:1.25;box-shadow:none;transition:background .18s,border-color .18s,color .18s;cursor:pointer}
+#ak .diom-school-pair .school-switch button::before{content:'';width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#c1c3bc}
+#ak .diom-school-pair .school-switch button[aria-pressed=true]{background:#fff0e8;border-color:#f5bca2;color:#87360f}
+#ak .diom-school-pair .school-switch button[aria-pressed=true]::before{background:#fe5f27}
+@media(hover:hover){#ak .diom-school-pair .school-switch button:hover{border-color:#fe8b5b;background:#fff5ee;color:#87360f}}
+#ak .diom-school-pair .school-switch button:focus-visible{outline:2px solid #fe5f27;outline-offset:4px}
+@media(max-width:760px){#ak .diom-school-pair .school-switch{padding:20px;min-height:0;gap:9px}#ak .diom-school-pair .school-switch button{flex:1 1 130px;padding:12px 14px;font-size:13px}}
