@@ -123,3 +123,73 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 @media(max-width:650px){#ak .a5 .photo-series-grid{grid-template-columns:1fr;gap:20px}#ak .a5 .portrait{aspect-ratio:auto;max-height:none}}
 #ak .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 28px;align-items:start}#ak .work-grid .project-art{aspect-ratio:1.5}#ak .work-grid .project-diom .project-art img{object-fit:contain;background:#eeeae3}#ak .work-grid .card-caption{gap:16px}@media(max-width:700px){#ak .work-grid{grid-template-columns:1fr;gap:32px}}
 #ak .work-grid>.project-card{grid-column:auto!important;grid-row:auto!important;width:100%!important;padding:0!important;margin:0!important}#ak .work-grid .project-art img{display:block;width:100%;height:100%;object-fit:cover}
+#ak .case-diom .fixed-art{gap:24px;align-items:center}
+#ak .case-diom .fixed-art img{height:auto;max-height:none;object-fit:contain;width:100%}
+#ak .case-diom .diom-evolution>div:first-child{background:#fff}
+#ak .case-diom .diom-evolution>div>img{max-width:450px;height:230px;width:90%;object-fit:contain}
+#ak .case-diom .badge-section{background:#f4f4f2;color:#222220;padding:32px 0}
+#ak .case-diom .badge-section>.shell{width:calc(100% - 48px)}
+#ak .case-diom .badge-stage{height:650px;background:#f8f8f6;border:1px solid #ddd;display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}
+#ak .case-diom .badge-stage canvas{position:relative;display:block;width:100%;height:100%;min-height:0;grid-row:1;touch-action:pan-y}
+#ak .case-diom .badge-note{position:static;grid-row:2;color:#525252;background:#f8f8f6;padding:14px 20px;text-align:center;margin:0;max-width:none;font-size:12px}
+#ak .case-diom .badge-drag{color:#444;writing-mode:horizontal-tb;transform:none;top:16px;right:16px;font-size:11px;max-width:calc(100% - 32px)}
+#ak .case-diom .badge-controls{gap:16px;display:flex;flex-wrap:wrap;color:#222220;padding-top:22px}
+#ak .case-diom .badge-controls>div{display:flex;flex-wrap:wrap;gap:8px}
+#ak .case-diom .badge-controls button,#ak .case-diom .object-tabs button{background:white;color:#222220;border:1px solid #777;min-height:44px;padding:10px 16px;font-size:14px}
+#ak .case-diom .badge-controls button[aria-pressed=true]{background:#222220;color:white;border-color:#222220}
+#ak .case-diom .badge-controls label{color:#222220;font-size:14px}
+#ak .case-diom .badge-controls input{accent-color:#fe5f27}
+#ak .case-diom .sharp-business-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#ak .sharp-business{display:grid;gap:12px;color:var(--fg);min-width:0}
+#ak .business-front,#ak .business-back{background:var(--bg);border:1px solid #0002;padding:28px;aspect-ratio:1.8;display:flex;flex-direction:column;container-type:inline-size}
+#ak .business-front header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px}
+#ak .business-front header strong{font:700 clamp(20px,3vw,38px)/1 Bounded,Arial;letter-spacing:-.04em}
+#ak .business-front header svg{width:70px;height:70px}
+#ak .business-front h3{font-size:clamp(14px,1.5vw,21px);line-height:1.35;margin:0 0 10px}
+#ak .business-front p{font-size:clamp(12px,1.2vw,17px);line-height:1.5;margin:0}
+#ak .business-front footer{border-top:1px solid currentColor;margin-top:auto;padding-top:18px;display:flex;justify-content:space-between;gap:10px;font-size:12px;line-height:1.5}
+#ak .business-back{flex-direction:row;align-items:center;justify-content:center;gap:25px}
+#ak .business-back svg{width:95px;height:95px}
+#ak .business-back strong{font:700 clamp(24px,3vw,48px)/1 Bounded,Arial}
+#ak .rebuild-note{font-size:12px;line-height:1.7;color:#525252;margin-top:20px}
+#ak .card-studio{background:#f6f6f4;padding:20px}
+#ak .card-view{height:600px;position:relative}
+#ak #cards-canvas{display:block;width:100%;height:100%;touch-action:pan-y;outline-offset:-5px}
+#ak .studio-status{position:absolute;left:20px;bottom:15px;font-size:12px;color:#444;pointer-events:none}
+#ak .studio-controls{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding-top:20px;border-top:1px solid #ccc}
+#ak .studio-controls>div{display:flex;gap:8px;flex-wrap:wrap}
+#ak .studio-controls button{background:#fff;color:#222;border:1px solid #777;padding:12px 16px;min-height:44px;font-size:13px;border-radius:24px}
+#ak .studio-controls button[aria-pressed=true]{background:#222;color:#fff}
+#ak .studio-controls label{display:flex;align-items:center;gap:12px;font-size:13px;color:#222}
+#ak .studio-controls input{accent-color:#fe5f27}
+#ak .case-diom button:focus-visible,#ak .case-diom canvas:focus-visible{outline:2px solid #fe5f27;outline-offset:3px}
+#ak .diom-school-stage.is-active .school-active{opacity:1}
+#ak .diom-school-stage.is-active .school-idle{opacity:0}
+@media(max-width:760px){#ak .case-diom .fixed-art,#ak .case-diom .sharp-business-grid{grid-template-columns:1fr}#ak .case-diom .badge-section>.shell{width:calc(100% - 24px)}#ak .case-diom .badge-stage{height:580px}#ak .business-front,#ak .business-back{padding:22px;aspect-ratio:auto;min-height:245px}#ak .business-front header svg{width:48px;height:48px}#ak .business-front footer{margin-top:24px;font-size:11px}#ak .card-view{height:460px}#ak .card-studio{padding:12px}#ak .studio-controls{flex-direction:column}#ak .case-diom .diom-object-gallery img{object-fit:contain;height:auto}}
+#ak #diom-part-16 .sharp-business-grid{display:block;max-width:1120px;margin:0 auto}
+#ak #diom-part-16 .sharp-business{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+#ak #diom-part-16 .business-front,#ak #diom-part-16 .business-back{min-height:0;aspect-ratio:1.8;padding:26px}
+#ak #diom-part-16 .business-front header strong{color:white}
+#ak #diom-part-16 .business-front h3{font-size:18px;margin:24px 0 9px}
+#ak #diom-part-16 .business-front p{font-size:14px;line-height:1.45;color:white}
+#ak #diom-part-16 .business-front footer{font-size:12px;margin-top:22px;padding-top:16px}
+#ak #diom-part-16 .business-back strong{color:white;font-size:44px}
+#ak #diom-part-16 .business-back svg{width:90px;height:90px}
+@media(max-width:700px){#ak #diom-part-16 .sharp-business{grid-template-columns:1fr;gap:16px}#ak #diom-part-16 .business-front,#ak #diom-part-16 .business-back{padding:22px}}
+#ak #diom-part-16 .business-front header{margin-bottom:10px}
+#ak #diom-part-16 .business-front header svg{width:44px;height:44px}
+#ak #diom-part-16 .business-front h3{margin:10px 0 8px}
+#ak #diom-part-16 .business-front footer{margin-top:auto;padding-top:12px}
+#ak #diom-objects{max-width:960px;margin:32px auto 0;padding:22px;background:#303234;border-radius:4px;color:#f5f5f2}
+#ak #diom-objects>.shell{width:100%;padding:0;margin:0;max-width:none}
+#ak #diom-objects .object-tabs{margin-bottom:14px}
+#ak #diom-objects .object-tabs button{background:transparent;color:#eee;border:0;padding:0;min-height:30px;pointer-events:none}
+#ak #diom-objects .badge-stage{height:620px;background:#303234;border:0;grid-template-rows:minmax(0,1fr) auto}
+#ak #diom-objects .badge-stage canvas{width:100%;height:100%;min-height:0;cursor:grab}
+#ak #diom-objects .badge-note{background:#303234;color:#c9cbcd;padding:12px 0;font-size:13px}
+#ak #diom-objects .badge-drag{color:#c9cbcd;font-size:12px}
+#ak #diom-objects .badge-controls{gap:18px;padding-top:16px;border-top:1px solid #ffffff24}
+#ak #diom-objects .badge-controls label{color:#eee}
+#ak #diom-objects .badge-controls button{color:#eee;background:#3d4043;border-color:#66696c;font-size:13px;min-height:40px;padding:8px 14px}
+#ak #diom-objects .badge-controls button[aria-pressed=true]{background:#fe5f27;color:white;border-color:#fe5f27}
+@media(max-width:700px){#ak #diom-objects{padding:16px;margin-top:24px}#ak #diom-objects .badge-stage{height:510px}#ak #diom-objects .badge-controls{gap:12px}#ak #diom-objects .badge-controls>div{gap:6px;flex-wrap:wrap}}
