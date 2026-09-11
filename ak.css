@@ -121,3 +121,5 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 #ak .a5 .photo-series-grid img{width:100%;height:auto;object-fit:contain}
 #ak .a5 .photo-series{border-top:1px solid var(--line)}
 @media(max-width:650px){#ak .a5 .photo-series-grid{grid-template-columns:1fr;gap:20px}#ak .a5 .portrait{aspect-ratio:auto;max-height:none}}
+#ak .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 28px;align-items:start}#ak .work-grid .project-art{aspect-ratio:1.5}#ak .work-grid .project-diom .project-art img{object-fit:contain;background:#eeeae3}#ak .work-grid .card-caption{gap:16px}@media(max-width:700px){#ak .work-grid{grid-template-columns:1fr;gap:32px}}
+#ak .work-grid>.project-card{grid-column:auto!important;grid-row:auto!important;width:100%!important;padding:0!important;margin:0!important}#ak .work-grid .project-art img{display:block;width:100%;height:100%;object-fit:cover}
