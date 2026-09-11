@@ -53070,7 +53070,7 @@ float inkMin=min(diffuseColor.r,min(diffuseColor.g,diffuseColor.b));
 float neutralInk=(1.0-smoothstep(0.015,0.06,inkMax-inkMin))*(1.0-smoothstep(0.045,0.12,inkMax));
 diffuseColor.rgb*=mix(1.0,0.22,neutralInk);
 `);};const front=new Mesh(geometry,frontMat),back=new Mesh(geometry,backMat);front.position.z=.021;back.position.z=-.021;back.rotation.y=Math.PI;card.add(front,back);
-const load=src=>new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=src;});
+const load=src=>new Promise((resolve,reject)=>{const img=new Image();img.crossOrigin='anonymous';img.onload=()=>resolve(img);img.onerror=reject;img.src=src;});
 const images=await Promise.all(['card-pair','card-front','card-back'].map(k=>load(window.DIOM_ASSETS[k])));
 function texture(img,crop){let source=img;if(crop){source=document.createElement('canvas');source.width=crop[2];source.height=crop[3];source.getContext('2d').drawImage(img,...crop,0,0,crop[2],crop[3]);}const t=new Texture(source);t.colorSpace=SRGBColorSpace;t.anisotropy=renderer.capabilities.getMaxAnisotropy();t.needsUpdate=true;return t;}
 const pairs=[[texture(images[0],[148,99,885,574]),texture(images[0],[1054,99,885,574])],[texture(images[1]),texture(images[2])]];
