@@ -1,5 +1,5 @@
 /* AK_CSS_AUTOLOAD */
-(function(){try{if(!document.querySelector('link[data-ak-css]')){var l=document.createElement('link');l.rel='stylesheet';l.dataset.akCss='1';l.href='https://nitromb1910-design.github.io/portfolio/ak.css?v=20260911';document.head.appendChild(l);}}catch(e){}})();
+(function(){try{if(!document.querySelector('link[href*="ak.css"]')){var l=document.createElement('link');l.rel='stylesheet';l.dataset.akCss='1';l.href='https://nitromb1910-design.github.io/portfolio/ak.css?v=20260911';document.head.appendChild(l);}}catch(e){}})();
 
 window.AK_EMBED=true;
 window.AK_ASSET_BASE=(function(){try{var s=document.currentScript||document.querySelector('script[src*="ak.js"]');return s&&s.src?s.src.replace(/\/[^\/?#]*(?:[?#].*)?$/,""):"."}catch(e){return "."}})();
