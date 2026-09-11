@@ -193,3 +193,4 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 #ak #diom-objects .badge-controls button{color:#eee;background:#3d4043;border-color:#66696c;font-size:13px;min-height:40px;padding:8px 14px}
 #ak #diom-objects .badge-controls button[aria-pressed=true]{background:#fe5f27;color:white;border-color:#fe5f27}
 @media(max-width:700px){#ak #diom-objects{padding:16px;margin-top:24px}#ak #diom-objects .badge-stage{height:510px}#ak #diom-objects .badge-controls{gap:12px}#ak #diom-objects .badge-controls>div{gap:6px;flex-wrap:wrap}}
+#ak .case-diom .school-pair{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}@media(max-width:900px){#ak .case-diom .school-pair{grid-template-columns:1fr}}
