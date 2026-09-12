@@ -222,3 +222,12 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 /* VOID FITNESS: шрифты кейса (в документе, иначе не работают в Shadow DOM) */
 @font-face{font-family:Display;src:url(assets/void/font-display.ttf) format('truetype');font-weight:200 700;font-display:swap}
 @font-face{font-family:Word;src:url(assets/void/font-word.ttf) format('truetype');font-display:swap}
+/* Выбранные работы: список прокручивается, блок не растягивает главную */
+#ak .stage-index{position:relative;min-height:430px}
+#ak .stage-inner{position:absolute;inset:0;display:flex;flex-direction:column;min-height:0}
+#ak .stage-scroll{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#4a5043 transparent;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(#000 calc(100% - 26px),transparent)}
+#ak .stage-scroll::-webkit-scrollbar{width:6px}
+#ak .stage-scroll::-webkit-scrollbar-thumb{background:#4a5043;border-radius:3px}
+#ak .stage-scroll::-webkit-scrollbar-track{background:transparent}
+@media(max-width:700px){#ak .stage-index{position:static;min-height:0;display:block}#ak .stage-inner{position:static;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}#ak .stage-inner>.eyebrow{grid-column:1/-1}#ak .stage-scroll{display:contents;mask-image:none}}
+
