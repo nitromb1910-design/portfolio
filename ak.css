@@ -219,3 +219,6 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 @media(max-width:760px){#ak .diom-school-pair .school-switch{padding:20px;min-height:0;gap:9px}#ak .diom-school-pair .school-switch button{flex:1 1 130px;padding:12px 14px;font-size:13px}}
 /* Имя на главной: верхняя линия Е продолжает перекладину Т одной толщиной (Unbounded 600) */
 #ak .name-band .nb-e{font-style:normal;position:relative}#ak .name-band .nb-e::after{content:'';position:absolute;left:.24em;width:.51em;top:.25em;height:.162em;background:currentColor}
+/* VOID FITNESS: шрифты кейса (в документе, иначе не работают в Shadow DOM) */
+@font-face{font-family:Display;src:url(assets/void/font-display.ttf) format('truetype');font-weight:200 700;font-display:swap}
+@font-face{font-family:Word;src:url(assets/void/font-word.ttf) format('truetype');font-display:swap}
