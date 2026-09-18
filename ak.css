@@ -251,3 +251,9 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 
 @media(min-width:701px){#ak .stage-choice{grid-template-columns:26px minmax(0,1fr) 92px}#ak .stage-choice img{width:92px;height:62px;object-fit:contain}}
 #ak .stage-choice:hover,#ak .stage-choice[aria-pressed=true]{background:linear-gradient(90deg,rgba(222,210,199,.12),rgba(222,210,199,.02) 55%,rgba(222,210,199,0) 82%)}
+
+#ak footer{padding:34px 0 22px}
+#ak .email{display:inline-block;font-size:clamp(20px,2.1vw,30px);letter-spacing:-.02em;margin:26px 0 0;border-color:#4a5043;padding-bottom:4px}
+#ak .email:hover{color:#ded2c7;border-color:#ded2c7}
+#ak .footer-bottom{margin-top:34px;padding-top:18px}
+@media(max-width:700px){#ak footer{padding:26px 0 20px}#ak .email{font-size:20px;margin-top:20px}#ak .footer-bottom{margin-top:26px}}
