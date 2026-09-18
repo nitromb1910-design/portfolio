@@ -244,8 +244,10 @@ body{background:#101110}#ak{--paper:#101110;--ink:#f4f5ef;--purple:#ded2c7;--lin
 #ak .stage-choice{transition:color .25s,background-color .3s}
 #ak .stage-choice img{filter:none;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 #ak .stage-choice>div{transition:transform .3s cubic-bezier(.2,.7,.2,1);transform-origin:left center}
-#ak .stage-choice:hover{background:rgba(222,210,199,.10)}
-#ak .stage-choice[aria-pressed=true]{background:rgba(222,210,199,.14)}
+
 #ak .stage-choice:hover>div,#ak .stage-choice[aria-pressed=true]>div{transform:scale(1.04)}
 #ak .stage-choice:hover img{transform:scale(1.06)}
 @media(prefers-reduced-motion:reduce){#ak .stage-choice>div,#ak .stage-choice img{transition:none;transform:none}}
+
+@media(min-width:701px){#ak .stage-choice{grid-template-columns:26px minmax(0,1fr) 92px}#ak .stage-choice img{width:92px;height:62px;object-fit:contain}}
+#ak .stage-choice:hover,#ak .stage-choice[aria-pressed=true]{background:linear-gradient(90deg,rgba(222,210,199,.12),rgba(222,210,199,.02) 55%,rgba(222,210,199,0) 82%)}
